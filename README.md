@@ -47,7 +47,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Update tags
-        uses: dae-ne/update-tags@main # note that it's still in development, the version will be updated later (e.g. dae-ne/update-tags@v1)
+        uses: rczaka/update-tags@main # note that it's still in development, the version will be updated later (e.g. rczaka/update-tags@v1)
         with:
           type: ${{ github.event.inputs.update-type }}
           version: ${{ github.event.inputs.version }}
